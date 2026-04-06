@@ -59,16 +59,10 @@ export default function ContactsPage() {
       formLabel: 'Direct contact',
       formTitle: 'Contact form',
 
-      formText:
-        'Use this form instead of exposing a public email address in the page source.',
-
       name: 'Name',
       email: 'Email',
       message: 'Message',
       submit: 'Send message',
-
-      note:
-        'Replace the form action with your Formspree or backend endpoint.',
 
       placeholderName: 'Your name',
       placeholderEmail: 'your@email.com',
