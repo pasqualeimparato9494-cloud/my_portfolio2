@@ -273,10 +273,6 @@ const researchItems: ResearchItem[] = [
           \ \ \ \hbox{ on }
           \partial\Omega,   
         \end{cases}`,
-    note: {
-      en: 'Short description of the publication, research topic, and relevance.',
-      it: 'Breve descrizione della pubblicazione, del tema di ricerca e della sua rilevanza.',
-    },
     url: 'https://aos.ro/wp-content/anale/MVol18Nr1Art.17.pdf',
   },
   {
@@ -289,10 +285,6 @@ const researchItems: ResearchItem[] = [
           -\hbox{div}(M(x)\,{D} u) + u   =\theta\; \psi|\psi|^{p'-2} +f (x);  \\ 
           \psi\in W_0^{1,2}:\;-\hbox{div}(M(x)\,{D}\psi) + \psi= u|u|^{p-2}
           \end{cases}`,
-    note: {
-      en: 'Short description of the work, method, or academic contribution.',
-      it: 'Breve descrizione del lavoro, del metodo o del contributo accademico.',
-    },
     url: 'https://www.aimspress.com/aimspress-data/era/2026/1/PDF/era-34-01-003.pdf',
   },
   {
@@ -304,10 +296,6 @@ const researchItems: ResearchItem[] = [
           +a(x)\,u 
           =
           \sqrt{\;[b(x)]^2+  |E\cdot\nabla u|^2  \;}+f  (x), \ \ \ \hbox{with zero boundary condition}`,
-    note: {
-      en: 'Short description of the research area, content, and context.',
-      it: 'Breve descrizione dell’ambito, del contenuto e del contesto della ricerca.',
-    },
     url: 'https://link.springer.com/article/10.1007/s00032-024-00400-0',
   },
   {
