@@ -1151,9 +1151,11 @@ export default function HomePage() {
                     </p>
                   )}
 
-                  <div className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300 md:text-[15px]">
-                    <TeX math={item.latex} settings={{ throwOnError: false }} />
-                  </div>
+<div className="mt-4 max-w-full overflow-x-auto rounded-xl border border-white/10 bg-[#081331]/40 p-3 text-slate-300 md:max-w-3xl md:p-4">
+  <div className="min-w-max text-[13px] leading-relaxed md:text-[15px]">
+    <TeX math={item.latex} settings={{ throwOnError: false }} />
+  </div>
+</div>
                 </a>
               ))}
             </div>
