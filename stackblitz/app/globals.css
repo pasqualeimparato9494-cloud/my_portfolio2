@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+/* Fix responsive equations */
+
+.katex {
+  font-size: 0.95em;
+}
+
+@media (max-width: 640px) {
+
+  .katex {
+    font-size: 0.82em;
+  }
+
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .katex-display > .katex {
+    white-space: nowrap;
+  }
+
+}
