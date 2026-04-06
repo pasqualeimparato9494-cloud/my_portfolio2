@@ -30,16 +30,10 @@ export default function ContactsPage() {
       formLabel: 'Contatto diretto',
       formTitle: 'Modulo contatti',
 
-      formText:
-        'Usa questo modulo invece di mostrare un indirizzo email pubblico nel codice della pagina.',
-
       name: 'Nome',
       email: 'Email',
       message: 'Messaggio',
       submit: 'Invia messaggio',
-
-      note:
-        'Il modulo utilizza Formspree. Puoi sostituire l’endpoint con il tuo backend.',
 
       placeholderName: 'Il tuo nome',
       placeholderEmail: 'tua@email.com',
