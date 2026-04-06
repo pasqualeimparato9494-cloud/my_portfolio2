@@ -1139,11 +1139,11 @@ export default function HomePage() {
                     </p>
                   )}
 
-<div className="mt-4 max-w-full overflow-x-auto rounded-xl border border-white/10 bg-[#081331]/40 p-3 text-slate-300 md:max-w-3xl md:p-4">
-  <div className="min-w-max text-[13px] leading-relaxed md:text-[15px]">
-    <TeX math={item.latex} settings={{ throwOnError: false }} />
-  </div>
-</div>
+                  <div className="mt-4 max-w-full overflow-x-auto rounded-xl border border-white/10 bg-[#081331]/40 p-3 text-slate-300 md:max-w-3xl md:p-4">
+                    <div className="min-w-max text-[13px] leading-relaxed md:text-[15px]">
+                      <TeX math={item.latex} settings={{ throwOnError: false }} />
+                    </div>
+                  </div>
                 </a>
               ))}
             </div>
@@ -1278,19 +1278,21 @@ export default function HomePage() {
 
           <section className="border-b border-white/10 px-6 py-10 md:px-10 md:py-14">
             <div className="space-y-8">
-              <div className="w-full">
-                <div
-                  className="flex w-full items-baseline gap-x-2 whitespace-nowrap font-mono tracking-tight md:gap-x-3"
-                  style={{
-                    fontSize: 'clamp(11px, 2.1vw, 52px)',
-                    lineHeight: 1.18,
-                  }}
-                >
-                  <span className="shrink-0 text-slate-400">{`{`}</span>
-                  <span className="shrink-0 text-sky-400">"MY_JOB_TITLE"</span>
-                  <span className="shrink-0 text-slate-300">:</span>
+              <div className="w-full overflow-hidden">
+                <div className="flex w-full flex-wrap items-baseline gap-x-2 gap-y-1 font-mono tracking-tight md:gap-x-3">
+                  <span className="shrink-0 text-[18px] leading-none text-slate-400 sm:text-[22px] md:text-[32px] lg:text-[40px]">
+                    {`{`}
+                  </span>
 
-                  <div className="min-w-0 flex-1">
+                  <span className="shrink-0 text-[20px] font-semibold leading-none text-sky-400 sm:text-[24px] md:text-[32px] lg:text-[40px]">
+                    "MY_JOB_TITLE"
+                  </span>
+
+                  <span className="shrink-0 text-[18px] leading-none text-slate-300 sm:text-[22px] md:text-[32px] lg:text-[40px]">
+                    :
+                  </span>
+
+                  <div className="min-w-0 flex-[1_1_100%] md:flex-[1_1_auto]">
                     <AnimatePresence mode="wait">
                       <motion.span
                         key={`${lang}-${roleIndex}`}
@@ -1298,18 +1300,20 @@ export default function HomePage() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -8 }}
                         transition={{ duration: 0.35 }}
-                        className="block text-amber-400"
+                        className="block max-w-full break-words text-[18px] leading-tight text-amber-400 sm:text-[22px] md:text-[32px] lg:text-[40px]"
                       >
                         "{rotatingRoles[lang][roleIndex]}"
                       </motion.span>
                     </AnimatePresence>
                   </div>
 
-                  <span className="shrink-0 text-slate-400">{`}`}</span>
+                  <span className="shrink-0 text-[18px] leading-none text-slate-400 sm:text-[22px] md:text-[32px] lg:text-[40px]">
+                    {`}`}
+                  </span>
                 </div>
               </div>
 
-              <div className="text-[18px] uppercase tracking-wide text-white/95 md:text-[22px]">
+              <div className="text-[15px] uppercase tracking-wide text-white/95 sm:text-[16px] md:text-[22px]">
                 {t.roleLine}
               </div>
 
