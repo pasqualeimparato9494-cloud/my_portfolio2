@@ -634,7 +634,7 @@ ORDER BY importance DESC;`,
       ai: `SELECT * FROM certifications
 WHERE category = 'AI'
   AND expiration_date > SYSDATE
-ORDER BY importance DESC;`
+ORDER BY importance DESC;`,
       languages: `SELECT * FROM certifications
 WHERE category = 'LANGUAGES'
   AND expiration_date > SYSDATE
