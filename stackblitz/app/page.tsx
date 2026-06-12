@@ -535,7 +535,7 @@ const certificationCards: CertificationCard[] = [
       it: 'AWS Certified AI Practitioner',
     },
     subtitle: {
-      en: 'Amazon Web Services Training and Certification',
+      en: 'AWS',
       it: 'Amazon Web Services Training and Certification',
     },
     description: {
