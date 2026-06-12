@@ -527,6 +527,27 @@ const certificationCards: CertificationCard[] = [
     badgeImage:
       '/badges/cambridge-assessment-international-education-vector-logo.png',
   },
+  {
+    id: 'c13',
+    category: 'AI',
+    title: {
+      en: 'AWS Certified AI Practitioner',
+      it: 'AWS Certified AI Practitioner',
+    },
+    subtitle: {
+      en: 'Amazon Web Services Training and Certification',
+      it: 'Amazon Web Services Training and Certification',
+    },
+    description: {
+      en: 'Certification in AI demonstrating understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS',
+      it: 'Certficazione in IA che dimostra conoscenza di IA, Machine Learning a Intelligenza Artificiale generativa, metodi e strategie in generale e in ambiente AWS',
+    },
+    badgeLabel: { en: 'View Certificate', it: 'Visualizza certificato' },
+    badgeUrl:
+      'https://www.credly.com/badges/d261800e-b647-4360-90be-b18aea632a31/public_url',
+    badgeImage:
+      '/badges/aws-certified-ai-practitioner.png',
+  },
 ];
 
 const copy: Record<Lang, CopyDictionary> = {
@@ -577,6 +598,7 @@ const copy: Record<Lang, CopyDictionary> = {
       'service-management': 'Service Management',
       database: 'Database',
       agile: 'Agile',
+      ai: 'AI',
       'cloud-platform': 'Cloud Platform',
       'ux-design': 'UX Design',
       languages: 'Languages',
@@ -609,6 +631,10 @@ ORDER BY importance DESC;`,
 WHERE category = 'UX_DESIGN'
   AND expiration_date > SYSDATE
 ORDER BY importance DESC;`,
+      ai: `SELECT * FROM certifications
+WHERE category = 'AI'
+  AND expiration_date > SYSDATE
+ORDER BY importance DESC;`
       languages: `SELECT * FROM certifications
 WHERE category = 'LANGUAGES'
   AND expiration_date > SYSDATE
