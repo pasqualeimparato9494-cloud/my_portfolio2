@@ -40,7 +40,8 @@ type CertificationCategory =
   | 'agile'
   | 'cloud-platform'
   | 'ux-design'
-  | 'languages';
+  | 'languages'
+  | 'ai';
 
 type CertificationCard = {
   id: string;
@@ -528,8 +529,8 @@ const certificationCards: CertificationCard[] = [
       '/badges/cambridge-assessment-international-education-vector-logo.png',
   },
   {
-    id: 'c13',
-    category: 'AI',
+  id: 'c13',
+  category: 'ai',
     title: {
       en: 'AWS Certified AI Practitioner',
       it: 'AWS Certified AI Practitioner',
@@ -593,15 +594,15 @@ const copy: Record<Lang, CopyDictionary> = {
       'No certifications available for the selected category.',
     certificationsOpenBadge: 'Open badge',
     categories: {
-      all: 'All categories',
-      'project-management': 'Project Management',
-      'service-management': 'Service Management',
-      database: 'Database',
-      agile: 'Agile',
-      ai: 'AI',
-      'cloud-platform': 'Cloud Platform',
-      'ux-design': 'UX Design',
-      languages: 'Languages',
+        all: 'All categories',
+  'project-management': 'Project Management',
+  'service-management': 'Service Management',
+  database: 'Database',
+  agile: 'Agile',
+  ai: 'AI',
+  'cloud-platform': 'Cloud Platform',
+  'ux-design': 'UX Design',
+  languages: 'Languages',
     },
     oracleQueriesByCategory: {
       all: `SELECT * FROM certifications
@@ -683,15 +684,16 @@ ORDER BY importance DESC;`,
       'Nessuna certificazione disponibile per la categoria selezionata.',
     certificationsOpenBadge: 'Apri badge',
     categories: {
-      all: 'Tutte le categorie',
-      'project-management': 'Project Management',
-      'service-management': 'Service Management',
-      database: 'Database',
-      agile: 'Agile',
-      'cloud-platform': 'Cloud Platform',
-      'ux-design': 'UX Design',
-      languages: 'Lingue',
-    },
+  all: 'Tutte le categorie',
+  'project-management': 'Project Management',
+  'service-management': 'Service Management',
+  database: 'Database',
+  agile: 'Agile',
+  ai: 'AI',
+  'cloud-platform': 'Cloud Platform',
+  'ux-design': 'UX Design',
+  languages: 'Lingue',
+},
     oracleQueriesByCategory: {
       all: `SELECT * FROM certifications
 ORDER BY category, title;`,
@@ -715,6 +717,9 @@ WHERE category = 'UX_DESIGN'
 ORDER BY vendor, achieved_date DESC;`,
       languages: `SELECT * FROM certifications
 WHERE category = 'LANGUAGES'
+ORDER BY vendor, achieved_date DESC;`,
+ai: `SELECT * FROM certifications
+WHERE category = 'AI'
 ORDER BY vendor, achieved_date DESC;`,
     },
   },
