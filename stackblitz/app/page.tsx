@@ -573,7 +573,7 @@ const certificationCards: CertificationCard[] = [
       it: 'Certificazione focalizzata sull’individuazione di opportunità AI ad alto valore, sulla traduzione delle capacità AI in risultati di business, sulla valutazione delle scelte build-versus-buy e sull’adozione responsabile dell’AI.',
     },
     badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
-    badgeUrl: '#AWS_AI_BUSINESS_STRATEGIST_BADGE_URL',
+    badgeUrl: 'https://www.credly.com/badges/101baa41-439e-4de6-8fda-54e408b680ed/public_url',
     badgeImage:
       '/badges/aws-certified-ai-business-strategist.png',
   },
@@ -593,7 +593,7 @@ const certificationCards: CertificationCard[] = [
       it: 'Riconoscimento Early Adopter associato alla certificazione AWS Certified AI Business Strategist.',
     },
     badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
-    badgeUrl: '#AWS_AI_BUSINESS_STRATEGIST_EARLY_ADOPTER_BADGE_URL',
+    badgeUrl: 'https://www.credly.com/badges/ca147b23-7722-42f3-8514-2176ea094b0a/public_url',
     badgeImage:
       '/badges/aws-certified-ai-business-strategist-early-adopter.png',
   },
@@ -613,7 +613,7 @@ const certificationCards: CertificationCard[] = [
       it: 'Badge sui concetti fondamentali di MongoDB, sul modello dati documentale e sugli elementi principali dell’architettura MongoDB.',
     },
     badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
-    badgeUrl: '#MONGODB_OVERVIEW_BADGE_URL',
+    badgeUrl: 'https://www.credly.com/badges/95e2c3c3-749f-42ff-a570-50b5b2222827/public_url',
     badgeImage:
       '/badges/mongodb-overview-core-concepts-and-architecture.png',
   },
