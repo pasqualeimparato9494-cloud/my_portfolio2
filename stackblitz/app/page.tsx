@@ -264,6 +264,14 @@ const researchItems: ResearchItem[] = [
   {
     year: '2026',
     title:
+      'Stability of the Solutions of Nonlinear Weighted Elliptic Equations Without the Weighted Sobolev Spaces Framework',
+    venue: 'Journal of Convex Analysis, Vol. 33, No. 3',
+    latex: String.raw`-\hbox{div}\left(s(x)|\nabla u_n|^{p-2}\nabla u_n\right)=f_n(x)`,
+    url: 'https://journalofconvexanalysis.com/articles/jca33039/',
+  },
+  {
+    year: '2026',
+    title:
       'Finite energy weak solutions to some Dirichlet problems with very singular drifts and nonlinear advection terms',
     venue:
       'Annals Academy of Romanian Scientists Series on Mathematics and Its Application',
@@ -529,8 +537,8 @@ const certificationCards: CertificationCard[] = [
       '/badges/cambridge-assessment-international-education-vector-logo.png',
   },
   {
-  id: 'c13',
-  category: 'ai',
+    id: 'c13',
+    category: 'ai',
     title: {
       en: 'AWS Certified AI Practitioner',
       it: 'AWS Certified AI Practitioner',
@@ -540,14 +548,74 @@ const certificationCards: CertificationCard[] = [
       it: 'Amazon Web Services Training and Certification',
     },
     description: {
-      en: 'Certification in AI demonstrating understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS',
-      it: 'Certficazione in IA che dimostra conoscenza di IA, Machine Learning a Intelligenza Artificiale generativa, metodi e strategie in generale e in ambiente AWS',
+      en: 'Certification in AI demonstrating understanding of AI, ML, and generative AI concepts, methods, and strategies in general and on AWS.',
+      it: 'Certificazione in IA che dimostra conoscenza di IA, Machine Learning e Intelligenza Artificiale generativa, metodi e strategie in generale e in ambiente AWS.',
     },
     badgeLabel: { en: 'View Certificate', it: 'Visualizza certificato' },
     badgeUrl:
       'https://www.credly.com/badges/d261800e-b647-4360-90be-b18aea632a31/public_url',
     badgeImage:
       '/badges/aws-certified-ai-practitioner.png',
+  },
+  {
+    id: 'c14',
+    category: 'ai',
+    title: {
+      en: 'AWS Certified AI Business Strategist',
+      it: 'AWS Certified AI Business Strategist',
+    },
+    subtitle: {
+      en: 'AWS',
+      it: 'Amazon Web Services Training and Certification',
+    },
+    description: {
+      en: 'Certification focused on identifying high-value AI opportunities, translating AI capabilities into business outcomes, evaluating build-versus-buy decisions, and supporting responsible AI adoption.',
+      it: 'Certificazione focalizzata sull’individuazione di opportunità AI ad alto valore, sulla traduzione delle capacità AI in risultati di business, sulla valutazione delle scelte build-versus-buy e sull’adozione responsabile dell’AI.',
+    },
+    badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
+    badgeUrl: '#AWS_AI_BUSINESS_STRATEGIST_BADGE_URL',
+    badgeImage:
+      '/badges/aws-certified-ai-business-strategist.png',
+  },
+  {
+    id: 'c15',
+    category: 'ai',
+    title: {
+      en: 'AWS Certified AI Business Strategist – Early Adopter',
+      it: 'AWS Certified AI Business Strategist – Early Adopter',
+    },
+    subtitle: {
+      en: 'AWS',
+      it: 'Amazon Web Services Training and Certification',
+    },
+    description: {
+      en: 'Early Adopter recognition associated with the AWS Certified AI Business Strategist certification.',
+      it: 'Riconoscimento Early Adopter associato alla certificazione AWS Certified AI Business Strategist.',
+    },
+    badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
+    badgeUrl: '#AWS_AI_BUSINESS_STRATEGIST_EARLY_ADOPTER_BADGE_URL',
+    badgeImage:
+      '/badges/aws-certified-ai-business-strategist-early-adopter.png',
+  },
+  {
+    id: 'c16',
+    category: 'database',
+    title: {
+      en: 'MongoDB Overview: Core Concepts and Architecture',
+      it: 'MongoDB Overview: Core Concepts and Architecture',
+    },
+    subtitle: {
+      en: 'MongoDB University',
+      it: 'MongoDB University',
+    },
+    description: {
+      en: 'Badge covering MongoDB core concepts, document-oriented data modeling, and the fundamental elements of MongoDB architecture.',
+      it: 'Badge sui concetti fondamentali di MongoDB, sul modello dati documentale e sugli elementi principali dell’architettura MongoDB.',
+    },
+    badgeLabel: { en: 'View Badge', it: 'Visualizza badge' },
+    badgeUrl: '#MONGODB_OVERVIEW_BADGE_URL',
+    badgeImage:
+      '/badges/mongodb-overview-core-concepts-and-architecture.png',
   },
 ];
 
@@ -975,6 +1043,7 @@ export default function HomePage() {
                     </option>
                     <option value="database">{t.categories.database}</option>
                     <option value="agile">{t.categories.agile}</option>
+                    <option value="ai">{t.categories.ai}</option>
                     <option value="cloud-platform">
                       {t.categories['cloud-platform']}
                     </option>
