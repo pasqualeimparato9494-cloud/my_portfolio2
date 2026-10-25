@@ -342,7 +342,7 @@ const certificationCards: CertificationCard[] = [
     },
     badgeLabel: { en: 'Credly Badge', it: 'Badge Credly' },
     badgeUrl:
-      'https://www.credly.com/badges/aaefe9cf-1ed5-4df3-8c90-eab68fdfddb1',
+      'https://www.credly.com/badges/a1e96e2a-a367-454f-8741-2ea43ad8a5a7/public_url',
     badgeImage: '/badges/project-management-professional-pmp.png',
   },
   {
